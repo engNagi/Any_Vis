@@ -123,8 +123,8 @@ USE_TZ = True
 
 STATIC_URL = '/assets/'
 # assets files folder
-STATICFILES_DIR = [os.path.join(BASE_DIR, 'assets'),
-                   ]
-
+STATICFILES_DIRS = (
+    os.path.join(BASE_DIR, 'assets'),
+)
 # django-debug-toolbar
 INTERNAL_IPS = '127.0.0.1'
